@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.LoginActivity">
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/tillEmail"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+      android:layout_width="291dp"
+      android:layout_height="65dp"
+      android:layout_marginTop="68dp"
+      app:layout_constraintHorizontal_bias="0.3"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <com.google.android.material.textfield.TextInputLayout
+      android:id="@+id/tillPassword"
+      android:layout_width="291dp"
+      android:layout_height="65dp"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+      app:layout_constraintEnd_toEndOf="@+id/tillEmail"
+      app:layout_constraintStart_toStartOf="@+id/tillEmail"
+      app:layout_constraintTop_toBottomOf="@+id/tillEmail" >
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword" />
+  </com.google.android.material.textfield.TextInputLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

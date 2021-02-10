@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TamanIndo2</string>
+    <string name="title_home">Home</string>
+    <string name="title_layanan">Layanan</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="masuk">Sekali Masuk</string>
+    <string name="satu_malam">Penginapan 1 Malam</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+
+    <string name="enter_text_here">Enter text here</string>
+    <string name="generate">Generate</string>
+    <string name="scanner">Scanner</string>
+    <string name="barcode_image">Barcode Image</string>
+
+</resources>
