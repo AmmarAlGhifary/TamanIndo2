@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "555199848033",
+    "project_id": "tamanindo-70de0",
+    "storage_bucket": "tamanindo-70de0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555199848033:android:09d370c493809094499420",
+        "android_client_info": {
+          "package_name": "com.blogspot.yourfavoritekaisar.tamanindo2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555199848033-o48g2hs9f5vgdei2vlconj01ihr8brkm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxwS4ex2qQZu0nX8AX06r5umcldnfTkCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "555199848033-o48g2hs9f5vgdei2vlconj01ihr8brkm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

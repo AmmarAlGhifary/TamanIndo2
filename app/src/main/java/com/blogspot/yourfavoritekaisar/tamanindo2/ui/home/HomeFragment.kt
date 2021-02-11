@@ -4,24 +4,24 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProvider
 import com.blogspot.yourfavoritekaisar.tamanindo2.R
 
-class HomeFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+class HomeFragment : Fragment(), View.OnClickListener {
 
-    override fun onCreateView(
-            inflater: LayoutInflater,
-            container: ViewGroup?,
-            savedInstanceState: Bundle?
-    ): View? {
-        homeViewModel =
-                ViewModelProvider(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        return root
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        return inflater.inflate(R.layout.fragment_home, container, false)
+    }
+
+    override fun onClick(v: View?) {
+        when (v?.id) {
+            R.id.btn_sekali_masuk -> {
+
+            }
+            R.id.btn_malam -> {
+
+            }
+        }
     }
 }

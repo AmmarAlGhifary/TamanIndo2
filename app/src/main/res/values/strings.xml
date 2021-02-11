@@ -14,5 +14,6 @@
     <string name="generate">Generate</string>
     <string name="scanner">Scanner</string>
     <string name="barcode_image">Barcode Image</string>
+    <string name="logout">Logout</string>
 
 </resources>

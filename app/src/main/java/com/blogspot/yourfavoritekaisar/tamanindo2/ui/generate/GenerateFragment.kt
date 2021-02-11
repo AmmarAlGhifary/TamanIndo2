@@ -1,5 +1,6 @@
 package com.blogspot.yourfavoritekaisar.tamanindo2.ui.generate
 
+import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Color
 import android.os.Bundle
@@ -8,7 +9,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.blogspot.yourfavoritekaisar.tamanindo2.R
+import com.blogspot.yourfavoritekaisar.tamanindo2.ui.main.MainActivity
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.MultiFormatWriter
 import com.google.zxing.WriterException
@@ -18,11 +21,10 @@ private const val TAG = "FragmentGenerate"
 
 class GenerateFragment : Fragment(), View.OnClickListener  {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?)
+    : View? {
+        val activity = activity as MainActivity
+        activity.onBackPressed()
         return inflater.inflate(R.layout.fragment_generate, container, false)
     }
 
@@ -37,6 +39,15 @@ class GenerateFragment : Fragment(), View.OnClickListener  {
                 }
             }
         }
+    }
+    override fun onAttach(context: Context) {
+        (activity as MainActivity)?.hideBottomNavigation()
+        super.onAttach(context)
+    }
+
+    override fun onDetach() {
+        super.onDetach()
+        (activity as MainActivity)?.showBottomNavigation()
     }
 
     private fun generateQR(s: String): Bitmap? {

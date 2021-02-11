@@ -10,7 +10,7 @@ android {
 
     defaultConfig {
         applicationId "com.blogspot.yourfavoritekaisar.tamanindo2"
-        minSdkVersion 22
+        minSdkVersion 25
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
@@ -51,8 +51,29 @@ dependencies {
     implementation 'com.google.zxing:core:3.4.0'
     implementation 'com.journeyapps:zxing-android-embedded:4.1.0'
 
+    //Firestore
+    implementation 'com.google.firebase:firebase-firestore:22.0.2'
+
+    //Database
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+
+    //Auth
+    implementation 'com.google.firebase:firebase-auth:20.0.2'
+    implementation 'com.google.firebase:firebase-core:18.0.2'
+
+    //CircleImage
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //Navigator
+    implementation 'com.pandora.bottomnavigator:bottom-navigator:1.8'
+
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
+apply plugin: 'com.google.gms.google-services'
