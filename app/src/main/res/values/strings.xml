@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TamanIndo2</string>
+    <string name="app_name">Taman Nasional</string>
     <string name="title_home">Home</string>
     <string name="title_layanan">Layanan</string>
     <string name="title_profile">Profile</string>
@@ -15,5 +15,9 @@
     <string name="scanner">Scanner</string>
     <string name="barcode_image">Barcode Image</string>
     <string name="logout">Logout</string>
+    <string name="txt_profile">Profile Operator</string>
+    <string name="txt_settings">Pengaturan</string>
+    <string name="txt_help">Bantuan</string>
+    <string name="txt_keluar">Keluar</string>
 
 </resources>

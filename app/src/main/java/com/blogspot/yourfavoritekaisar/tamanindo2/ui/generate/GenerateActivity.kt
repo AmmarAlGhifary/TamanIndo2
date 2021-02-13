@@ -3,12 +3,12 @@ package com.blogspot.yourfavoritekaisar.tamanindo2.ui.generate
 import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.blogspot.yourfavoritekaisar.tamanindo2.R
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.MultiFormatWriter
@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.activity_generate.*
 
 private const val TAG = "GenerateActivity"
 
-class GenerateActivity : AppCompatActivity(), View.OnClickListener {
+class GenerateActivity : AppCompatActivity(), View.OnClickListener  {
 
     private lateinit var intentIntegrator: IntentIntegrator
 
@@ -63,8 +63,8 @@ class GenerateActivity : AppCompatActivity(), View.OnClickListener {
             for (x in 0 until width) {
                 for (y in 0 until height) {
                     bitmap.setPixel(x, y,
-                            if (bitMatrix[x, y]) Color.BLACK
-                            else Color.WHITE)
+                        if (bitMatrix[x, y]) Color.BLACK
+                        else Color.WHITE)
                 }
             }
             val barcodeEncoder = BarcodeEncoder()
