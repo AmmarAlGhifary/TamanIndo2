@@ -12,21 +12,9 @@
         android:id="@+id/btn_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edt_text"
+        android:layout_below="@+id/iv_barcode"
         android:text="@string/generate"
         android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:id="@+id/edt_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/iv_barcode"
-        android:layout_centerHorizontal="true"
-        android:gravity="center_horizontal"
-        android:layout_margin="4dp"
-        android:hint="@string/enter_text_here"
-        android:importantForAutofill="no"
-        android:inputType="textAutoComplete" />
 
     <ImageView
         android:id="@+id/iv_barcode"

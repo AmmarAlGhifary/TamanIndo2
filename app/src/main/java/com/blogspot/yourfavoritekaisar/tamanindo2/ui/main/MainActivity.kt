@@ -11,7 +11,7 @@ import androidx.core.os.postDelayed
 import androidx.fragment.app.Fragment
 import androidx.navigation.NavController
 import com.blogspot.yourfavoritekaisar.tamanindo2.R
-import com.blogspot.yourfavoritekaisar.tamanindo2.ui.home.HomeFragment
+import com.blogspot.yourfavoritekaisar.tamanindo2.ui.home.HomeFragment2
 import com.blogspot.yourfavoritekaisar.tamanindo2.ui.layanan.LayananFragment
 import com.blogspot.yourfavoritekaisar.tamanindo2.ui.profile.ProfileFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -30,13 +30,13 @@ class MainActivity : AppCompatActivity() {
         val navView: BottomNavigationView = findViewById(R.id.bottomNavigationView)
         navView.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
 
-        moveToFragment(HomeFragment())
+        moveToFragment(HomeFragment2())
     }
 
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when(item.itemId){
             R.id.navigation_home -> {
-                moveToFragment(HomeFragment())
+                moveToFragment(HomeFragment2())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.navigation_layanan -> {

@@ -33,11 +33,8 @@ class GenerateActivity : AppCompatActivity(), View.OnClickListener  {
     override fun onClick(v: View?) {
         when(v?.id){
             R.id.btn_main -> {
-                val text = edt_text.text.toString()
-
-                if (text.isNotBlank()) {
-                    val bitmap = generateQR(text)
-                }
+                val text = "Coba masukin harga"
+                generateQR(text)
             }
         }
     }
@@ -45,7 +42,7 @@ class GenerateActivity : AppCompatActivity(), View.OnClickListener  {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         val intentResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
         if (intentResult!= null){
-            edt_text.setText(intentResult.contents)
+            btn_main.text = intentResult.contents
         } else{
             Toast.makeText(this, "Dibatalkan", Toast.LENGTH_SHORT).show()
         }
