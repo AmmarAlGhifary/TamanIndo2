@@ -16,33 +16,30 @@ import com.google.zxing.WriterException
 import com.google.zxing.integration.android.IntentIntegrator
 import com.journeyapps.barcodescanner.BarcodeEncoder
 import kotlinx.android.synthetic.main.activity_generate.*
+import kotlinx.android.synthetic.main.fragment_home2.*
 
-private const val TAG = "GenerateActivity"
 
-class GenerateActivity : AppCompatActivity(), View.OnClickListener  {
+class GenerateActivity : AppCompatActivity() {
 
     private lateinit var intentIntegrator: IntentIntegrator
+
+    companion object {
+        private const val TAG = "GenerateActivity"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_generate)
         intentIntegrator = IntentIntegrator(this)
-        btn_main.setOnClickListener(this)
-    }
-
-    override fun onClick(v: View?) {
-        when(v?.id){
-            R.id.btn_main -> {
-                val text = "Coba masukin harga"
-                generateQR(text)
-            }
-        }
+        generateQR("50,000")
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         val intentResult = IntentIntegrator.parseActivityResult(requestCode, resultCode, data)
         if (intentResult!= null){
-            btn_main.text = intentResult.contents
+            btn_masuk.text = intentResult.contents
+            btn_malam.text = intentResult.contents
+
         } else{
             Toast.makeText(this, "Dibatalkan", Toast.LENGTH_SHORT).show()
         }
