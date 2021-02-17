@@ -10,6 +10,7 @@ import com.blogspot.yourfavoritekaisar.tamanindo2.R
 import com.blogspot.yourfavoritekaisar.tamanindo2.databinding.FragmentHome2Binding
 import com.blogspot.yourfavoritekaisar.tamanindo2.onClick
 import com.blogspot.yourfavoritekaisar.tamanindo2.ui.generate.GenerateActivity
+import com.blogspot.yourfavoritekaisar.tamanindo2.ui.generate.GeneratePenginapanActivity
 import com.blogspot.yourfavoritekaisar.tamanindo2.viewBinding
 
 class HomeFragment2 : Fragment(R.layout.fragment_home2) {
@@ -28,7 +29,7 @@ class HomeFragment2 : Fragment(R.layout.fragment_home2) {
             activity?.startActivity(intent)
         }
         binding.btnMalam.onClick {
-            val intent = Intent (activity, GenerateActivity::class.java)
+            val intent = Intent (activity, GeneratePenginapanActivity::class.java)
             activity?.startActivity(intent)
         }
     }
