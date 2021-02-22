@@ -25,7 +25,7 @@ class GeneratePenginapanActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_generate_penginapan)
         intentIntegrator = IntentIntegrator(this)
-        generateQR("https://app.sandbox.midtrans.com/payment-links/1613614967530")
+        generateQR("https://app.sandbox.midtrans.com/payment-links/1613633738939")
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

@@ -29,7 +29,7 @@ class GenerateActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_generate)
         intentIntegrator = IntentIntegrator(this)
-        generateQR("https://app.sandbox.midtrans.com/payment-links/1613613041998")
+        generateQR("https://app.sandbox.midtrans.com/payment-links/1613633634232")
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
