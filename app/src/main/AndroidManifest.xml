@@ -30,8 +30,13 @@
             android:name=".ui.generate.GenerateActivity"
             android:theme="@style/NoActionbar" />
         <activity
-            android:name=".ui.generate.GeneratePenginapanActivity"
+            android:name=".ui.web.ShowPaymentActivity"
+            android:theme="@style/NoActionbar" />
+        <activity android:name=".ui.web.ShowTicketMalamActivity"
             android:theme="@style/NoActionbar"/>
+        <activity
+            android:name=".ui.generate.GeneratePenginapanActivity"
+            android:theme="@style/NoActionbar" />
     </application>
 
 </manifest>

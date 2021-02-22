@@ -11,6 +11,8 @@ import com.blogspot.yourfavoritekaisar.tamanindo2.databinding.FragmentHome2Bindi
 import com.blogspot.yourfavoritekaisar.tamanindo2.onClick
 import com.blogspot.yourfavoritekaisar.tamanindo2.ui.generate.GenerateActivity
 import com.blogspot.yourfavoritekaisar.tamanindo2.ui.generate.GeneratePenginapanActivity
+import com.blogspot.yourfavoritekaisar.tamanindo2.ui.web.ShowPaymentActivity
+import com.blogspot.yourfavoritekaisar.tamanindo2.ui.web.ShowTicketMalamActivity
 import com.blogspot.yourfavoritekaisar.tamanindo2.viewBinding
 
 class HomeFragment2 : Fragment(R.layout.fragment_home2) {
@@ -25,11 +27,11 @@ class HomeFragment2 : Fragment(R.layout.fragment_home2) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnMasuk.onClick {
-            val intent = Intent (activity, GenerateActivity::class.java)
+            val intent = Intent (activity, ShowPaymentActivity::class.java)
             activity?.startActivity(intent)
         }
         binding.btnMalam.onClick {
-            val intent = Intent (activity, GeneratePenginapanActivity::class.java)
+            val intent = Intent (activity, ShowTicketMalamActivity::class.java)
             activity?.startActivity(intent)
         }
     }
